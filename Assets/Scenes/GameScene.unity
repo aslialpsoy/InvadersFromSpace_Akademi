@@ -671,6 +671,7 @@ MonoBehaviour:
   - {fileID: 4201651985308868034, guid: 446934cb385845f47857aeccbab24e60, type: 3}
   - {fileID: 5674884869450808008, guid: 9f89101370121f34e8e57eab10267dad, type: 3}
   - {fileID: 3688701184858459677, guid: e1f5f7288d8aaaa499072a43d0dc4bad, type: 3}
+  - {fileID: 5266408468531337613, guid: 6fa047f445f3e0d40b1c0161b7113ed7, type: 3}
 --- !u!4 &527352472
 Transform:
   m_ObjectHideFlags: 0
@@ -2021,7 +2022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4406880431922177005}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,3 +152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7916482334903690035, guid: c02f1b0a681cf0c4eb2ac11672da1843, type: 3}
+  objectPool: {fileID: 0}
+  shipStats:
+    maxHealth: 0
+    currentHealth: 0
+    maxLives: 3
+    currentLives: 3
+    shipSpeed: 0
+    fireRate: 0

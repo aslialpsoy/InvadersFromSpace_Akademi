@@ -53,16 +53,43 @@ public class Player : MonoBehaviour
         if (dirx >= -0.1f && transform.position.x < maxX)
         {
             transform.Translate(Vector2.right * Time.deltaTime * shipStats.shipSpeed);
-   
         }  
     }
+
     public void ShootButton()
     {
-        if (isShooting)
+        if (!isShooting)
         {
             StartCoroutine(Shoot());
         }
     }
+
+    public void AddHealth()
+    {
+        if (shipStats.currentHealth == shipStats.maxHealth)
+        {
+            UIManager.UpdateScore(250);
+        }
+        else
+        {
+            shipStats.currentHealth++;
+            UIManager.UpdateHealthBar(shipStats.currentHealth);
+        }
+    }
+
+    public void AddLife()
+    {
+        if (shipStats.currentLives == shipStats.maxLives)
+        {
+            UIManager.UpdateScore(1000);
+        }
+        else
+        {
+            shipStats.currentLives++;
+            UIManager.UpdateLives(shipStats.currentLives);
+        }
+    }
+
     private IEnumerator Shoot()
     {
         isShooting = true;
